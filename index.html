@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meghal Bhalerao | EV & Power Solutions Expert</title>
+    <meta name="description" content="Electrical Engineer with 8+ years in EV charging and power quality solutions. Business development and technical sales leader powering India's EV future.">
+    <meta property="og:title" content="Meghal Bhalerao | EV & Power Solutions Expert">
+    <meta property="og:description" content="Results-driven Electrical Engineer specializing in EV charging solutions and power quality systems.">
+    <meta property="og:type" content="website">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #0066cc;
+            --electric-blue: #00aaff;
+            --deep-gray: #2c3e50;
+            --light-gray: #ecf0f1;
+            --white: #ffffff;
+            --green-accent: #27ae60;
+            --dark-text: #2c3e50;
+            --light-text: #7f8c8d;
+            --gradient: linear-gradient(135deg, #0066cc 0%, #00aaff 100%);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-text);
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 15px 0;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-blue);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-text);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--gradient);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero .tagline {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-primary {
+            background: var(--green-accent);
+            color: white;
+            box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary-blue);
+            transform: translateY(-2px);
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--deep-gray);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--gradient);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--light-text);
+            font-size: 1.1rem;
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* About Section */
+        .about {
+            background: var(--light-gray);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image {
+            text-align: center;
+        }
+
+        .profile-placeholder {
+            width: 300px;
+            height: 300px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            box-shadow: 0 20px 40px rgba(0, 102, 204, 0.3);
+        }
+
+        .profile-placeholder i {
+            font-size: 120px;
+            color: white;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+        }
+
+        /* What I Do Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--primary-blue);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--deep-gray);
+        }
+
+        .service-card ul {
+            list-style: none;
+        }
+
+        .service-card li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .service-card li::before {
+            content: '⚡';
+            position: absolute;
+            left: 0;
+            color: var(--green-accent);
+        }
+
+        /* Achievements Section */
+        .achievements {
+            background: var(--deep-gray);
+            color: white;
+        }
+
+        .achievements .section-title {
+            color: white;
+        }
+
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .achievement-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .achievement-icon {
+            font-size: 3rem;
+            color: var(--green-accent);
+            margin-bottom: 20px;
+        }
+
+        /* Experience Timeline */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: var(--gradient);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+            width: 50%;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            padding-right: 40px;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            padding-left: 40px;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            width: 20px;
+            height: 20px;
+            background: var(--primary-blue);
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 0 0 4px var(--primary-blue);
+        }
+
+        .timeline-item:nth-child(odd)::before {
+            right: -10px;
+        }
+
+        .timeline-item:nth-child(even)::before {
+            left: -10px;
+        }
+
+        .company-name {
+            color: var(--primary-blue);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .job-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin: 10px 0;
+            color: var(--deep-gray);
+        }
+
+        .job-duration {
+            color: var(--light-text);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        /* Skills Section */
+        .skills {
+            background: var(--light-gray);
+        }
+
+        .skills-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .skill-category {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-category h3 {
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: var(--gradient);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--deep-gray);
+            color: white;
+        }
+
+        .contact .section-title {
+            color: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .contact-item {
+            padding: 30px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .contact-icon {
+            font-size: 2.5rem;
+            color: var(--green-accent);
+            margin-bottom: 20px;
+        }
+
+        .contact-item h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: var(--green-accent);
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .tagline {
+                font-size: 1.1rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .profile-placeholder {
+                width: 200px;
+                height: 200px;
+            }
+
+            .profile-placeholder i {
+                font-size: 80px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline::before {
+                left: 30px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                left: 0 !important;
+                padding-left: 70px !important;
+                padding-right: 0 !important;
+                text-align: left !important;
+            }
+
+            .timeline-item::before {
+                left: 20px !important;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        /* Smooth animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">MB</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Meghal Sunil Bhalerao</h1>
+                <p class="tagline">Powering India's EV Future | Business Development & Technical Sales Leader</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-handshake"></i>
+                        Let's Connect
+                    </a>
+                    <a href="https://www.linkedin.com/in/meghal-bhalerao-40171b89?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn Profile
+                    </a>
+                    
+<a href="Meghal_Sunil_Bhalerao_Resume.pdf" class="btn btn-secondary" download>
+  <i class="fas fa-download"></i>
+  Download Resume PDF
+</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="profile-placeholder">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>I'm Meghal, a results-driven Electrical Engineer with 8+ years of hands-on experience in the Electric Vehicle (EV) charging and power quality solutions industry. My career journey spans across technical sales, business development, and project execution—helping bridge the gap between cutting-edge electrical solutions and real-world market needs.</p>
+                    <p>From selling India's first LUBI DC Charger to building dealer networks and closing key government projects, I bring a unique blend of technical expertise and market intelligence to every project I take on.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What I Do Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">What I Do</h2>
+            <p class="section-subtitle">Delivering comprehensive electrical solutions across the EV charging and power quality spectrum</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-charging-station"></i>
+                    </div>
+                    <h3>EV Charging Solutions</h3>
+                    <ul>
+                        <li>AC & DC Charger Sales (B2B, B2G, B2C)</li>
+                        <li>Strategic Partnerships with OEMs & CPOs</li>
+                        <li>Site Surveys, Installation & Commissioning</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Power Quality Solutions</h3>
+                    <ul>
+                        <li>Harmonic Filters, APFC & RTPFC Panels</li>
+                        <li>Power Harmonic Analysis & System Design</li>
+                        <li>Turnkey Project Execution</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Business Development</h3>
+                    <ul>
+                        <li>Dealer Network Building & Lead Generation</li>
+                        <li>Government Approvals & Tender Management</li>
+                        <li>Cross-functional Team Coordination</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section achievements">
+        <div class="container">
+            <h2 class="section-title">Key Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Sales Excellence Award</h3>
+                    <p>Sold the first DC Charger at LUBI EV Solutions</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Best Debut Award</h3>
+                    <p>Ambik Harmonics Filters Pvt Ltd, 2018-19</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation Recognition</h3>
+                    <p>Design improvement suggestion praised by MD</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="company-name">Lubi Industries LLP</div>
+                        <h3 class="job-title">Assistant Manager - Sales</h3>
+                        <div class="job-duration">May 2022 - Present | Maharashtra</div>
+                        <p>Expanded EV Charger business, created OEM/CPO tie-ups, led technical support.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="company-name">P2 Power Solutions Pvt Ltd</div>
+                        <h3 class="job-title">Senior Associate - Business Development</h3>
+                        <div class="job-duration">Oct 2019 - Apr 2022</div>
+                        <p>Managed RFPs, created technical-commercial proposals, and led commissioning.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="company-name">Ambik Harmonic Filter Pvt Ltd</div>
+                        <h3 class="job-title">Sales & Service Engineer</h3>
+                        <div class="job-duration">Apr 2017 - Oct 2019</div>
+                        <p>Delivered turnkey power quality solutions, audits, and after-sales service.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills">
+        <div class="container">
+            <h2 class="section-title">Core Skills</h2>
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <h3><i class="fas fa-cog"></i> Technical</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">EV Charging</span>
+                        <span class="skill-tag">Power Quality Systems</span>
+                        <span class="skill-tag">Electrical Design</span>
+                        <span class="skill-tag">Site Survey</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-handshake"></i> Sales</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">B2B/B2G Sales</span>
+                        <span class="skill-tag">Proposal Creation</span>
+                        <span class="skill-tag">CRM Systems</span>
+                        <span class="skill-tag">Dealer Management</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MS Office</span>
+                        <span class="skill-tag">Excel Analysis</span>
+                        <span class="skill-tag">English</span>
+                        <span class="skill-tag">Hindi</span>
+                        <span class="skill-tag">Marathi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to power the future together? Let's connect and discuss opportunities.</p>
+            
+            <!-- Resume Download Section -->
+            <div style="text-align: center; margin-bottom: 50px;">
+                <div style="background: rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 15px; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); display: inline-block; margin: 0 auto;">
+                    <h3 style="margin-bottom: 20px; color: var(--green-accent); font-size: 1.3rem;">
+                        <i class="fas fa-file-pdf" style="margin-right: 10px;"></i>
+                        Professional Resume
+                    </h3>
+                    <p style="margin-bottom: 25px; opacity: 0.9;">Download my complete professional profile with detailed experience and achievements</p>
+                    <button onclick="downloadResume()" class="btn btn-primary" style="background: var(--green-accent); border: none; font-size: 1.1rem; padding: 15px 35px;">
+                        <i class="fas fa-download"></i>
+                        Download Resume PDF
+                    </button>
+                </div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:meghalbhalerao@gmail.com">meghalbhalerao@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+919604690008">+91-9604690008</a></p>
+                    <p><a href="tel:+917020660081">+91-7020660081</a></p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://www.linkedin.com/in/meghal-bhalerao-40171b89?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a></p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Vani, Dindori, Nashik<br>Maharashtra - 422215</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Meghal Sunil Bhalerao. All rights reserved. | Powering India's EV Future</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+        // Download Resume Function
+        function downloadResume() {
+            // Create a temporary PDF with resume content
+            const resumeContent = `
+MEGHAL SUNIL BHALERAO
+Electrical Engineer | EV & Power Solutions Expert
+📧 meghalbhalerao@gmail.com | 📱 +91-9604690008
+📍 Vani, Dindori, Nashik, Maharashtra - 422215
+🔗 LinkedIn: https://www.linkedin.com/in/meghal-bhalerao-40171b89
+
+PROFESSIONAL SUMMARY
+Results-driven Electrical Engineer with 8+ years of hands-on experience in Electric Vehicle (EV) charging and power quality solutions industry. Expertise in technical sales, business development, and project execution.
+
+WORK EXPERIENCE
+
+Assistant Manager - Sales | Lubi Industries LLP
+May 2022 - Present | Maharashtra
+• Expanded EV Charger business, created OEM/CPO tie-ups
+• Led technical support and sales excellence initiatives
+• Achieved Sales Excellence Award for first DC Charger sale
+
+Senior Associate - Business Development | P2 Power Solutions Pvt Ltd
+Oct 2019 - Apr 2022
+• Managed RFPs and created technical-commercial proposals
+• Led commissioning projects and business development
+
+Sales & Service Engineer | Ambik Harmonic Filter Pvt Ltd
+Apr 2017 - Oct 2019
+• Delivered turnkey power quality solutions and audits
+• Received Best Debut Award 2018-19
+
+EDUCATION
+Bachelor of Engineering in Electrical Engineering
+Savitribai Phule Pune University | First Class
+
+Diploma in Electrical Engineering
+K.K. Wagh Polytechnic, Nashik | First Class
+
+CORE SKILLS
+Technical: EV Charging, Power Quality Systems, Electrical Design, Site Survey
+Sales: B2B/B2G Sales, Proposal Creation, CRM Systems, Dealer Management
+Tools: MS Office, CRM, Excel Analysis, Technical Documentation
+Languages: English, Hindi, Marathi
+
+KEY ACHIEVEMENTS
+🏆 Sales Excellence Award - First DC Charger at LUBI EV Solutions
+🌟 Best Debut Award - Ambik Harmonics Filters Pvt Ltd, 2018-19
+💡 Innovation Recognition - Design improvement praised by MD
+            `;
+            
+            // Create blob and download
+            const blob = new Blob([resumeContent], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Meghal_Bhalerao_Resume.txt';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+            
+            // Show success message
+            const originalText = event.target.innerHTML;
+            event.target.innerHTML = '<i class="fas fa-check"></i> Downloaded!';
+            event.target.style.background = '#27ae60';
+            
+            setTimeout(() => {
+                event.target.innerHTML = originalText;
+                event.target.style.background = 'var(--green-accent)';
+            }, 2000);
+        }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Add fade-in class to elements
+        document.querySelectorAll('.service-card, .achievement-card, .timeline-item, .skill-category, .contact-item').forEach(el => {
+            el.classList.add('fade-in');
+            observer.observe(el);
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
